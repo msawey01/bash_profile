@@ -1,3 +1,5 @@
+#TEST
+
 # some more ls aliases
 alias ll='ls -Alh'
 alias la='ls -A'
