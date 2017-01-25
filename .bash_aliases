@@ -1,5 +1,3 @@
-#TEST
-
 # some more ls aliases
 alias ll='ls -Alh'
 alias la='ls -A'
@@ -12,7 +10,7 @@ gccFunc() {
 alias run=gccFunc
 
 # Update aliases
-alias update='sudo apt-get update -y && sudo apt-get upgrade -y'
+alias update='~/bash_profile/scripts/update_script'
 
 #Hoast aliases
 alias vs='cd ~/Share'

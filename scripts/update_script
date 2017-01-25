@@ -1,0 +1,6 @@
+#!/bin/bash
+
+git pull
+source ~/bash_profile/.bashrc
+source ~/bash_profile/.bash_alias
+sudo apt-get update && sudo apt-get -y upgrade
