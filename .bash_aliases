@@ -11,6 +11,10 @@ alias run=gccFunc
 
 # Update aliases
 alias update='~/bash_profile/scripts/update_script'
+alias up='sudo apt-get update && sudo apt-get upgrade -y'
+
+alias aliases='vim ~/bash_profile/.bash_aliases'
+alias bashrc='vim ~/bash_profile/.bashrc'
 
 #Hoast aliases
 alias vs='cd ~/Share'
