@@ -1,0 +1,5 @@
+alias home='cd /mnt/c/Users/micha'
+alias desk='cd /mnt/c/Users/micha/Desktop'
+alias doc='cd /mnt/c/Users/micha/Documents'
+alias oned='cd /mnt/c/Users/micha/OneDrive'
+alias down='cd /mnt/c/Users/micha/Downloads'

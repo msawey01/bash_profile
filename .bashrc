@@ -104,6 +104,12 @@ else
     echo "BASH ALIASES NOT PRESENT"
 fi
 
+#Windows aliases
+if [ -f ~/.win_bash ]; then
+    source ~/.win_bash
+    echo "Windows aliases present"
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
