@@ -11,6 +11,8 @@ esac
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
+#Source .bashrc
+alias srb='source .bashrc'
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -43,7 +45,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+# force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -91,6 +93,20 @@ fi
 alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
+alias lr='ls -R'
+
+#Docker
+alias drun='docker rund'
+alias drunt='docker run -ti'
+alias drund='docker run -d'
+alias drt='docker run -ti'
+alias drd='docker run -d'
+alias drtr='docker run -ti --rm'
+alias dex='docker exec -ti'
+function dexec() { docker exec -ti "$@" bash; }
+alias dps='docker ps'
+alias di='docker images'
+alias dm='docker-machine'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
